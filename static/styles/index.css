@@ -1,0 +1,289 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+.logo img {
+  height: 45px;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li:first-child {
+  margin-right: auto;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 28px;
+  margin-right: 20px;
+  font-family: "Chi", CHINESER;
+}
+
+.navbar ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-image {
+  text-align: center;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.overview-text {
+  text-align: justify;
+  font-family: 'Enriqueta', serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.pc_release {
+  position: absolute;
+  top: 1500px;
+  left: 270px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 33px;
+  font-family: 'Kir', kirsty;
+  display: inline;
+}
+
+.write_overview {
+  position: absolute;
+  top: 1500px;
+  left: 1030px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 33px;
+  font-family: 'Kir', kirsty;
+  display: inline;
+}
+
+.left-photo {
+  display: inline;
+  position: absolute;
+  left: 100px;
+  display: inline;
+  height: 500px;
+  transition: transform 0.2s;
+}
+
+.right-photo {
+  display: inline;
+  position: absolute;
+  left: 900px;
+  display: inline;
+  height: 460px;
+  transition: transform 0.2s;
+}
+
+
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgb(110, 110, 110);
+  margin-top: 600px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-family: 'Enriqueta', serif;
+  font-size: 18px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0 15px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Enriqueta', serif;
+  font-size: 18px;
+}
+
+.footer-links li a:hover {
+  color: red;
+}
+
+.footer-language {
+  font-family: 'Enriqueta', serif;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+/* Small 600px */
+@media screen and (max-width: 600px) {
+
+  .logo img {
+    width: 200px;
+  }
+
+  .navbar ul li a {
+    font-size: 20px;
+  }
+
+  .pc_release {
+    font-size: 25px;
+    top: 1360px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .write_overview {
+    font-size: 25px;
+    margin-top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .left-photo {
+    left: 2%;
+    height: 470px;
+  }
+
+  .right-photo {
+    margin-top: 570px;
+    left: 2%;
+    height: 470px;
+  }
+
+  .footer {
+    margin-top: 1200px;
+  }
+}
+
+/* Medium 601px and 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .pc_release {
+    top: 1270px;
+    left: 16%;
+  }
+
+  .write_overview {
+    top: 1270px;
+    left: 67%;
+  }
+
+  .left-photo {
+    left: 5%;
+    height: 400px;
+  }
+
+  .right-photo {
+    left: 60%;
+    height: 340px;
+    margin-top: 25px;
+  }
+
+  .footer {
+    margin-top: 550px;
+  }
+}
+
+@media print {
+
+  .navbar,
+  .header-image {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .overview-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .links,
+  .footer {
+    display: none;
+  }
+
+  .left-photo,
+  .right-photo {
+    display: block !important;
+  }
+}
+
+#skip-to-content {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+}

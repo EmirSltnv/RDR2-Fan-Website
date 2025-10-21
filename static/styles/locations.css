@@ -1,0 +1,545 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 0.8px solid rgb(110, 110, 110);
+}
+
+.logo img {
+    height: 45px;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li:first-child {
+    margin-right: auto;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 28px;
+    margin-right: 20px;
+    font-family: "Chi", CHINESER;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 55px;
+    font-family: "Kir", kirsty;
+}
+
+.Discover {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: justify;
+    font-family: 'Enriqueta', serif;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.arrow {
+    display: block;
+    margin: 20px auto;
+    margin-top: 100px;
+    width: 20px;
+}
+
+.locations_photo1 {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.locations_photo1 img {
+    width: 1200px;
+    height: auto;
+}
+
+.VALENTINE {
+    position: relative;
+    background-size: cover;
+    padding: 20px;
+    margin-left: 138px;
+    margin-top: 20px;
+}
+
+.val_text1 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    left: 8%;
+    font-size: 80px;
+    font-family: 'Enriqueta', serif;
+}
+
+.val_text1 img {
+    height: 135px;
+}
+
+
+.val_text2 {
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Enriqueta', serif;
+}
+
+.val_photos {
+    text-align: center;
+}
+
+.val_photos img {
+    height: 330px;
+}
+
+.val_left-photo {
+    float: left;
+    margin-left: 160px;
+}
+
+.val_right-photo {
+    float: right;
+    margin-right: 153px;
+}
+
+
+.locations_photo2 {
+    margin-top: 350px;
+    text-align: center;
+}
+
+.locations_photo2 img {
+    width: 1200px;
+    height: auto;
+}
+
+.ANNESBURG {
+    position: relative;
+    background-size: cover;
+    padding: 20px;
+    margin-left: 138px;
+    margin-top: 20px;
+}
+
+.ann_text1 {
+    position: absolute;
+    top: 31%;
+    width: 100%;
+    left: 8%;
+    font-size: 80px;
+    font-family: 'Enriqueta', serif;
+}
+
+.ann_text1 img {
+    height: 135px;
+}
+
+.ann_text2 {
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Enriqueta', serif;
+}
+
+.ann_photos {
+    text-align: center;
+}
+
+.ann_photos img {
+    height: 330px;
+}
+
+.an_left-photo {
+    float: left;
+    margin-left: 160px;
+}
+
+.an_right-photo {
+    float: right;
+    margin-right: 153px;
+}
+
+.locations_photo3 {
+    margin-top: 350px;
+    text-align: center;
+}
+
+.locations_photo3 img {
+    width: 1200px;
+    height: auto;
+}
+
+.SAINTDENIS {
+    position: relative;
+    background-size: cover;
+    padding: 20px;
+    margin-left: 138px;
+    margin-top: 20px;
+}
+
+.sa_text1 {
+    position: absolute;
+    top: 26%;
+    width: 100%;
+    left: 8%;
+    font-size: 80px;
+    font-family: 'Enriqueta', serif;
+}
+
+.sa_text1 img {
+    height: 135px;
+}
+
+.sa_text2 {
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 48%;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Enriqueta', serif;
+}
+
+.san_photos {
+    text-align: center;
+}
+
+.san_photos img {
+    height: 330px;
+}
+
+.san_left-photo {
+    float: left;
+    margin-left: 160px;
+}
+
+.san_right-photo {
+    float: right;
+    margin-right: 153px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgb(110, 110, 110);
+    width: 100%;
+    margin-top: 400px;
+    position: relative;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 1%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-family: 'Enriqueta', serif;
+    font-size: 18px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Enriqueta', serif;
+    font-size: 18px;
+}
+
+.footer-links li a:hover {
+    color: red;
+}
+
+.footer-language {
+    font-family: 'Enriqueta', serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Small 600px */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    .Discover {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .arrow {
+        width: 15px;
+        margin-top: 20px;
+    }
+
+    .locations_photo1 img,
+    .locations_photo2 img,
+    .locations_photo3 img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .VALENTINE,
+    .ANNESBURG,
+    .SAINTDENIS {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .val_text1 img,
+    .ann_text1 img,
+    .sa_text1 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .val_text2,
+    .ann_text2,
+    .sa_text2 {
+        width: 100%;
+        font-size: 16px;
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .val_photos img,
+    .ann_photos img,
+    .san_photos img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .val_left-photo,
+    .an_left-photo,
+    .san_left-photo,
+    .val_right-photo,
+    .an_right-photo,
+    .san_right-photo {
+        margin: 10px auto;
+    }
+
+    .footer {
+        margin-top: 600px;
+        padding: 10px;
+    }
+
+    .footer-content p,
+    .footer-links li a {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links li {
+        margin: 5px 0;
+    }
+}
+
+/* Medium 601px and 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .pc_release {
+        top: 1270px;
+        left: 16%;
+    }
+
+    .write_overview {
+        top: 1270px;
+        left: 67%;
+    }
+
+    .left-photo {
+        left: 5%;
+        height: 400px;
+    }
+
+    .right-photo {
+        left: 60%;
+        height: 340px;
+        margin-top: 25px;
+    }
+
+    .footer {
+        margin-top: 550px;
+    }
+}
+
+@media print {
+
+    .navbar,
+    .footer {
+        display: none;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Discover,
+    h1 {
+        margin-top: 0;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .locations_photo1 img,
+    .locations_photo2 img,
+    .locations_photo3 img,
+    .VALENTINE,
+    .ANNESBURG,
+    .SAINTDENIS {
+        display: block !important;
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .val_text1 img,
+    .ann_text1 img,
+    .sa_text1 img {
+        display: block !important;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .val_text2,
+    .ann_text2,
+    .sa_text2 {
+        display: block !important;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .val_photos img,
+    .ann_photos img,
+    .san_photos img {
+        display: block !important;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .val_left-photo,
+    .an_left-photo,
+    .san_left-photo,
+    .val_right-photo,
+    .an_right-photo,
+    .san_right-photo {
+        display: block !important;
+        margin: 10px auto;
+    }
+}

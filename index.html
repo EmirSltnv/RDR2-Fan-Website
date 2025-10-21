@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Dead Redemption 2 Home</title>
+  <link rel="stylesheet" href="static/styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Enriqueta&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: "Chi";
+      src: url("static/fonts/CHINESER.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "ChiR";
+      src: url("static/fonts/chinese_Rocks.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Red";
+      src: url("static/fonts/Redemption.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Kir";
+      src: url("static/fonts/kirsty.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Tor";
+      src: url("static/fonts/Toronto Gothic.ttf") format("truetype");
+    }
+  </style>
+</head>
+
+<body>
+  <div id="accessibility-toggle-container">
+    <button id="accessibility-toggle" onclick="toggleAccessibility()">Accessibility Mode</button>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="static/images/logo.svg" alt="Red Dead Redemption 2 Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="weapons.html">Weapons</a></li>
+        <li><a href="gang.html">The Van der Linde Gang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="header-image">
+    <img src="static/images/header-image.jpg" alt="Red Dead Redemption 2 Header Image">
+  </div>
+
+  <article class="container" id="overview">
+    <h5 class="overview-text alt-style">
+      America, 1899. The end of the Wild West era has begun. After a robbery goes badly wrong in the western town of
+      Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty
+      hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged
+      heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur
+      must make a choice between his own ideals and loyalty to the gang who raised him.
+    </h5>
+  </article>
+
+  <aside class="links">
+    <a href="pc_release.html" class="link1">
+      <p class="pc_release">PC Release </p>
+      <figure>
+        <img src="static/images/photo1.jpg" alt="Photo 1" class="left-photo">
+      </figure>
+    </a>
+    <a href="write_overview.html" class="link2">
+      <p class="write_overview">Write Overview</p>
+      <figure>
+        <img src="static/images/photo2.jpg" alt="Photo 2" class="right-photo">
+      </figure>
+    </a>
+  </aside>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2024 Red Dead Redemption 2. All rights reserved.</p>
+        <p class="footer-language">Language: English</p>
+        <ul class="footer-links">
+          <li><a href="mailto:emirsoltonov2005@gmail.com">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button id="skip-to-content" onclick="skipToContent()">Skip to main content</button>
+
+  <script>
+    function toggleAccessibility() {
+      var button = document.getElementById('accessibility-toggle');
+      var body = document.body;
+      if (button.innerText === 'Accessibility Mode') {
+        body.style.fontSize = '20px';
+        body.style.color = 'black';
+        body.style.backgroundColor = 'white';
+        button.innerText = 'Normal Mode';
+      } else {
+        body.style.fontSize = '';
+        body.style.color = '';
+        body.style.backgroundColor = '';
+        button.innerText = 'Accessibility Mode';
+      }
+    }
+
+    function skipToContent() {
+      document.getElementById('overview').scrollIntoView();
+    }
+
+    function toggleSkipToContent(event) {
+      var button = document.getElementById('skip-to-content');
+      if (event.keyCode === 9) {
+        button.style.display = 'block';
+      } else {
+        button.style.display = 'none';
+      }
+    }
+
+    document.addEventListener('keydown', toggleSkipToContent);
+  </script>
+</body>
+
+</html>
