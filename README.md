@@ -14,18 +14,26 @@ Built with **HTML5**, **CSS3**, and organized static assets.
 
 
 RDR2_Site/
-├── index.html
-├── gang.html
-├── locations.html
-├── pc_release.html
-├── weapons.html
-├── write_overview.html
-├── static/
-│ ├── styles/
-│ ├── images/
-│ ├── fonts/
-│ └── videoes/
-└── README.md
+index.html
+gang.html
+locations.html
+pc_release.html
+weapons.html
+write_overview.html
+static/
+css/
+index.css
+gang.css
+locations.css
+pc_release.css
+weapons.css
+write_overview.css
+images/
+... (all images)
+fonts/
+... (all fonts)
+videos/
+... (all video files)
 
 
 ## Usage
